@@ -16,7 +16,7 @@ class Time(loader.Module):
     @loader.command()
     async def now(self, message):
         """- показать сегодняшнюю дату"""
-        time = datetime.datetime.now()
+        time = datetime.now()
 
 
         await utils.answer(
