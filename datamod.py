@@ -16,18 +16,18 @@ class Time(loader.Module):
     @loader.command()
     async def now(self, message):
         """- показать сегодняшнюю дату"""
-        current_datetime = datetime.now()
+        time = datetime.datetime.now()
 
 
         await utils.answer(
                 message,
                 ("<b><emoji document_id=5370711279134582149>🗓</emoji><u>Today</u>\n"
-                 f"<b><emoji document_id=5258105663359294787>🗓</emoji><u>year</u>: {current_datetime.year}\n</b>"
-                 f"<b><emoji document_id=5258105663359294787>🗓</emoji><u>month</u>: {current_datetime.month}\n</b>"
-                 f"<b><emoji document_id=5258105663359294787>🗓</emoji><u>day</u>: {current_datetime.day}\n</b>"
-                 f"<b><emoji document_id=5258258882022612173>⏲</emoji><u>Real time</u>: {current_datetime.hour}</b>:"
-                 f"{current_datetime.minute}:"
-                 f"{current_datetime.second}(UTC+3)</b>"
+                 f"<b><emoji document_id=5258105663359294787>🗓</emoji><u>year</u>: {time.year}\n</b>"
+                 f"<b><emoji document_id=5258105663359294787>🗓</emoji><u>month</u>: {time.month}\n</b>"
+                 f"<b><emoji document_id=5258105663359294787>🗓</emoji><u>day</u>: {time.day}\n</b>"
+                 f"<b><emoji document_id=5258258882022612173>⏲</emoji><u>Real time</u>: {time.hour}</b>:"
+                 f"{time.minute}:"
+                 f"{time.second}(UTC+3)</b>"
 
                  ),
             )
