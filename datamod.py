@@ -21,11 +21,11 @@ class Time(loader.Module):
 
         await utils.answer(
                 message,
-                ("<b><emoji document_id=5370711279134582149>🗓</emoji><u>NOW</u>\n"
-                 f"<b><emoji document_id=5258105663359294787>🗓</emoji>year: {time.year}\n</b>"
-                 f"<b><emoji document_id=5258105663359294787>🗓</emoji>month: {time.month}\n</b>"
-                 f"<b><emoji document_id=5258105663359294787>🗓</emoji>day: {time.day}\n</b>"
-                 f"<b><emoji document_id=5258258882022612173>⏲</emoji>time: {time.hour}</b>:"
+                ("<b><emoji document_id=5370711279134582149>🗓</emoji><u>NOW--></u>\n"
+                 f"<b><emoji document_id=5258105663359294787>🗓</emoji>>year: {time.year}\n</b>"
+                 f"<b><emoji document_id=5258105663359294787>🗓</emoji>>month: {time.month}\n</b>"
+                 f"<b><emoji document_id=5258105663359294787>🗓</emoji>>day: {time.day}\n</b>"
+                 f"<b><emoji document_id=5258258882022612173>⏲</emoji>>time: {time.hour}</b>:"
                  f"{time.minute}:"
                  f"{time.second}(UTC+3)</b>"
 
