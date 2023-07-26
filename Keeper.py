@@ -46,7 +46,7 @@ class SaverMod(loader.Module):
 
     @loader.owner
     async def autosvcmd(self, m: types.Message):
-        "Переключить режим автозагрузки фото в лс"
+        "toggle photo auto-upload mode in PM"
         new_val = not self.db.get("Keeper", "state", False)
         self.db.set("Keeper", "state", new_val)
         await utils.answer(m, f"<b>[Keeper]</b> <pre>{new_val}</pre>")
