@@ -14,7 +14,7 @@
 #
 #     🔐  Licenced under the GNU AGPLv3
 #                        https://www.gnu.org/licence/aplg-3.0.html
-#meta developer: @def_n0
+#meta developer: @dev_n0
 #
 
 __version__ = (1, 0, 0)
