@@ -2,8 +2,8 @@
 #Decsription: Module for save self-destructing images
 #Author: kayt3m
 #Commands:
-# .sv
-# .autosv
+# .kv
+# .autokv
 #     _  __     ____    __    __  ________    ____       __  __
 #    | |/ /    / /\ \   \ \  / / |__    __|  /_/\ \     /  \/  \
 #    |   /    / /__\ \   \ \/ /     |  |        / /    / /\__/\ \
@@ -27,14 +27,14 @@ from .. import loader, utils
 
 
 @loader.tds
-class SaverMod(loader.Module):
+class KeeperMod(loader.Module):
     strings = {"name": "Keeper"}
 
     async def client_ready(self, client, db):
         self.db = db
 
     @loader.owner
-    async def svcmd(self, m: types.Message):
+    async def kvcmd(self, m: types.Message):
         ".sv <reply> - save a self-destructing photo"
         reply = await m.get_reply_message()
         if not reply or not reply.media or not reply.media.ttl_seconds:
@@ -45,7 +45,7 @@ class SaverMod(loader.Module):
         await m.client.send_file("me", new)
 
     @loader.owner
-    async def autosvcmd(self, m: types.Message):
+    async def autokvcmd(self, m: types.Message):
         "toggle photo auto-upload mode in PM"
         new_val = not self.db.get("Keeper", "state", False)
         self.db.set("Keeper", "state", new_val)
