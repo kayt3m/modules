@@ -2,8 +2,8 @@
 #Decsription: Module for save self-destructing images
 #Author: kayt3m
 #Commands:
-# .kv
-# .autokv
+# .kp
+# .akp
 #     _  __     ____    __    __  ________    ____       __  __
 #    | |/ /    / /\ \   \ \  / / |__    __|  /_/\ \     /  \/  \
 #    |   /    / /__\ \   \ \/ /     |  |        / /    / /\__/\ \
@@ -34,8 +34,8 @@ class KeeperMod(loader.Module):
         self.db = db
 
     @loader.owner
-    async def kvcmd(self, m: types.Message):
-        ".sv <reply> - save a self-destructing photo"
+    async def kpcmd(self, m: types.Message):
+        ".kp <reply> - save a self-destructing photo"
         reply = await m.get_reply_message()
         if not reply or not reply.media or not reply.media.ttl_seconds:
             return await m.edit("Интересно")
@@ -45,7 +45,7 @@ class KeeperMod(loader.Module):
         await m.client.send_file("me", new)
 
     @loader.owner
-    async def autokvcmd(self, m: types.Message):
+    async def akpcmd(self, m: types.Message):
         "toggle photo auto-upload mode in PM"
         new_val = not self.db.get("Keeper", "state", False)
         self.db.set("Keeper", "state", new_val)
