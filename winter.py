@@ -35,8 +35,8 @@ class WintMod(loader.Module):
             (
             "<b><emoji document_id=5391017948934578296>😌</emoji> До зимы"
                 f" осталось: {time_to_winter.days } дней,"
-                f" {time_to_winter.seconds // 3600} часов:"
-                f" {time_to_winter.seconds // 60 % 60} минут:"
+                f" {time_to_winter.seconds // 3600} часов,"
+                f" {time_to_winter.seconds // 60 % 60} минут,"
                 f" {time_to_winter.seconds % 60} секунд.\n<b>"
                 "<b><emoji document_id=5456169836855957796>😊</emoji> Жду вместе с тобой.</b> "
                  
