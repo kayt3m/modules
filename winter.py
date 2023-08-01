@@ -20,7 +20,7 @@ class WintMod(loader.Module):
     }
 
     @loader.command()
-    async def wint(self, message):
+    async def wt(self, message):
         """- outputs a timer."""
         now = datetime.now()
         winter = datetime(now.year, 12, 1)
