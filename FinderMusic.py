@@ -17,7 +17,7 @@
 #meta developer: @dev_n0
 #
 
-__version__ = (1, 0, 0)
+__version__ = (1, 0, 1)
 
 import logging
 from .. import loader, main, utils 
@@ -25,7 +25,7 @@ from .. import loader, main, utils
 logger = logging.getLogger(__name__)
 
 class FinderMusic(loader.Module):
-    """A module for searching information in bot @fmusbot """
+    """A module for searching music in bot @fmusbot """
     strings = {
         "name": "FinderMusic",
         "na": "<b>What do you need to find?</b>",
@@ -47,14 +47,14 @@ class FinderMusic(loader.Module):
                     message.to_id,
                     find[1].result.document,
                     caption="<b>Maybe this is the track you are looking for.</b>",
-                    reply_to=utils.get_topic(message)
+                    reply_to=utils.get_topic(message) if r else None,
                  )
             except:
                 await message.client.send_file(
                     message.to_id,
                     find[3].result.document,
                     captain="<b>Maybe this is the track you are looking for.</b>",
-                    reply_to=utils.get_topic(message)
+                    reply_to=utils.get_topic(message) if r else None
 
                  )
         except:
