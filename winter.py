@@ -12,13 +12,15 @@ from datetime import datetime
 from .. import loader, utils
 
 class Winter(loader.Module):
+"""Module that outputs a timer before the start of winter."""
 
-
-    strings = {"name": "WinterTime"}
+    strings = {
+        "name": "WinterTime"
+    }
 
     @loader.command()
     async def wint(self, message):
-        """- вывести таймер"""
+        """- outputs a timer."""
         now = datetime.now()
         winter = datetime(now.year, 12, 1)
         
@@ -30,13 +32,13 @@ class Winter(loader.Module):
         await utils.answer(
             message,
             (
-            "<b><emoji document_id=5391017948934578296>😌</emoji> До <u>зимы</u>"
-                f" осталось ≈ {time_to_winter.days } дней,"
+            "<b><emoji document_id=5391017948934578296>😌</emoji> До зимы"
+                f" осталось: {time_to_winter.days } дней,"
                 f" {time_to_winter.seconds // 3600} часов,"
                 f" {time_to_winter.seconds // 60 % 60} минут,"
                 f" {time_to_winter.seconds % 60} секунд.\n<b><emoji"
-                "<b><emoji document_id=5456169836855957796>😊</emoji> Жду вместе с тобой. "
-                 " <u>Kayt3m</u></b>"
+                "<b><emoji document_id=5456169836855957796>😊</emoji> Жду вместе с тобой.</b> "
+                 
             ),
         )
         
