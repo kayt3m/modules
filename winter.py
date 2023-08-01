@@ -12,7 +12,7 @@ from datetime import datetime
 from .. import loader, utils
 
 class Winter(loader.Module):
-"""Module that outputs a timer before the start of winter."""
+    """Module that outputs a timer before the start of winter."""
 
     strings = {
         "name": "WinterTime"
