@@ -1,4 +1,4 @@
-# Name: winter
+# Name: WintMod
 # Author: kayt3m
 # Commands: 
 # .wt
