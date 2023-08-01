@@ -11,8 +11,9 @@
 from datetime import datetime
 from .. import loader, utils
 
-class Winter(loader.Module):
-    """Module that outputs a timer before the start of winter."""
+@loader.tds
+class WintMod(loader.Module):
+    """ Module that outputs a timer before the start of winter. """
 
     strings = {
         "name": "WinterTime"
@@ -36,7 +37,7 @@ class Winter(loader.Module):
                 f" осталось: {time_to_winter.days } дней,"
                 f" {time_to_winter.seconds // 3600} часов,"
                 f" {time_to_winter.seconds // 60 % 60} минут,"
-                f" {time_to_winter.seconds % 60} секунд.\n<b><emoji"
+                f" {time_to_winter.seconds % 60} секунд.\n<b>"
                 "<b><emoji document_id=5456169836855957796>😊</emoji> Жду вместе с тобой.</b> "
                  
             ),
