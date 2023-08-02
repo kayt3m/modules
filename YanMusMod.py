@@ -1,8 +1,8 @@
-#Name: FindMusicMod
+#Name: YanMusMod
 #Decsription: A module for searching music in @yamdbot
 #Author: kayt3m
 #Commands:
-# .fm
+# .ymm
 # 
 #     _  __     ____    __    __  ________    ____       __  __
 #    | |/ /    / /\ \   \ \  / / |__    __|  /_/\ \     /  \/  \
@@ -27,8 +27,8 @@ logger = logging.getLogger(__name__)
 @loader.tds
 class FindMusicMod(loader.Module):
     """
-    Module FindMusicMod - search music.
-    Works via @fmusbot bot.
+    Module YanMusMod - search music.
+    Works via @yamdbot bot.
     """
 
     strings = {"name": "FindMusicMod"}
