@@ -25,7 +25,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 @loader.tds
-class FindMusicMod(loader.Module):
+class YanMusMod(loader.Module):
     """
     Module YanMusMod - search music.
     Works via @yamdbot bot.
