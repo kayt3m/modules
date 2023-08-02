@@ -1,5 +1,5 @@
 #Name: FindMusicMod
-#Decsription: A module for searching music in @fmusbot
+#Decsription: A module for searching music in @yamdbot
 #Author: kayt3m
 #Commands:
 # .fm
@@ -34,14 +34,14 @@ class FindMusicMod(loader.Module):
     strings = {"name": "FindMusicMod"}
 
     async def fmcmd(self, message):
-        """use for searching music."""
+        """ - use for searching music."""
         args = utils.get_args_raw(message)
         reply = await message.get_reply_message()
         if not args:
             return await message.edit("<b><emoji document_id=5260342697075416641>❌</emoji>No args!</b>")
         try:
             await message.edit("<b><emoji document_id=5309924890462134382>📀</emoji>Search...</b>")
-            music = await message.client.inline_query("fmusbot", args)
+            music = await message.client.inline_query("yamdbot", args)
             await message.delete()
             await message.client.send_file(
                 message.to_id,
