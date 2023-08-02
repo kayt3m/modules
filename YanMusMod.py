@@ -31,9 +31,9 @@ class FindMusicMod(loader.Module):
     Works via @yamdbot bot.
     """
 
-    strings = {"name": "FindMusicMod"}
+    strings = {"name": "YanMusMod"}
 
-    async def fmcmd(self, message):
+    async def ymmcmd(self, message):
         """ - use for searching music."""
         args = utils.get_args_raw(message)
         reply = await message.get_reply_message()
