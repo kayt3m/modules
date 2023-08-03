@@ -47,9 +47,9 @@ class ProfileEditorMod(loader.Module):
         "channel": "@dev_hik",
         "author": "kayt3m"
         }
-    async def client_ready(self, client:TelegramClient):
+    async def client_ready(self, client:TelegramClient, _):
         """client_ready hook"""
-        self.client = client
+        
 
         await client(JoinChannelRequest(channel=self.strings("channel")))
 
