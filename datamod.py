@@ -4,7 +4,7 @@
 # .now
 # Licenced under the GNU AGPLv3
 #                           https://www.gnu.org/licenses/apgl-3.0.html
-#meta developer: @def_n0
+#meta developer: @dev_n0
 
 from datetime import datetime
 from .. import loader, utils
