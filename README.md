@@ -20,16 +20,14 @@
 <li>⚠️ All modules is not scam and absolutely safe.</li>
 
 <h2>Company</h2>
-	<li>👤Company: 
-	https://t.me/morcorp</li>
-  <li>Second owner: https://t.me/unkmoral</li>
-	   <li>Him Bio: 
-			 https://morfeydev.ru</li>
+	<li><a href="https://t.me/morcorp">Company</a></li>
+  <li><a href="https://t.me/unkmoral">Owner</li>
+	   <li><a href="https://morfeydev.ru">Him bio</a</li>
 <h2>Guarantees</h2>
  <li>This repository contains modules for the userbot in Telegram - Hikka.</li> 
 
- <li>Users can download them directly from https://t.me/dev_hik Telegram channel or from GitHub.</li> 
+ <li>Users can download them directly from <a href="https://t.me/dev_hik"> Telegram channel</a> or from <a href="https://github.com/kayt3m/modules">GitHub.</a></li> 
 
- <li>Modules prepared for you by https://t.me/smlgwy and the MorCorp team.</li>
+ <li>Modules prepared for you by <a href="https://t.me/smlgwy">Gwyn</a> and the <a href="https://t.me/morcorp">MorCorp</a> team.</li>
 
  <li>All our official modules guarantee absolute safety and performance. We don't want to ruin our reputation.</li>
