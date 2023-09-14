@@ -61,7 +61,7 @@ class Searcher(loader.Module):
         if not result:
             return await utils.answer(m, self.strings("error"))
         
-        await result[random.randint(0, 59)].click(m.to_id, reply_to=r)
+        await result[random.randint(0,10)].click(m.to_id, reply_to=r)
         await m.delete()
 
     @loader.command()
@@ -79,7 +79,7 @@ class Searcher(loader.Module):
         if not result:
             return await utils.answer(m, self.strings("error"))
         
-        await result[random.randint(0, 59)].click(m.to_id, reply_to=r)
+        await result[random.randint(0, 10)].click(m.to_id, reply_to=r)
         await m.delete()
 
     @loader.command()
@@ -97,7 +97,7 @@ class Searcher(loader.Module):
         if not result:
             return await utils.answer(m, self.strings("error"))
         
-        await result[random.randint(0, 59)].click(m.to_id, reply_to=r)
+        await result[random.randint(0, 10)].click(m.to_id, reply_to=r)
         await m.delete()
 
     @loader.command()
@@ -115,5 +115,5 @@ class Searcher(loader.Module):
         if not result:
             return await utils.answer(m, self.strings("error"))
         
-        await result[random.randint(0, 59)].click(m.to_id, reply_to=r)
+        await result[random.randint(0, 10)].click(m.to_id, reply_to=r)
         await m.delete()
