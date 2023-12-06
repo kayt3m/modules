@@ -21,8 +21,7 @@
 
 <h2>Company</h2>
 	<li><a href="https://t.me/morcorp">Company</a></li>
-  <li><a href="https://t.me/devmorfey">Owner</li>
-	   <li><a href="https://morfeydev.ru">Him bio</a</li>
+  <li><a href="https://t.me/morflenok">Colleagua</li>
 <h2>Guarantees</h2>
  <li>This repository contains modules for the userbot in Telegram - Hikka.</li> 
 
