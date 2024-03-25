@@ -26,8 +26,6 @@ from telethon.tl.functions.account import (
  UpdateProfileRequest, 
  UpdateStatusRequest, 
  UpdateUsernameRequest)
-from telethon import TelegramClient
-from telethon.tl.functions.channels import JoinChannelRequest
 from .. import loader, utils
 
 
