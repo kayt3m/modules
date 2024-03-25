@@ -1,6 +1,6 @@
 #Name: Profile
 #Description: Module for changing profile data.
-#Author: kayt3m
+#Author: smlgwy
 # Commands:
 # .name | .about | .user
 #     _  __     ____    __    __  ________    ____       __  __
@@ -13,7 +13,7 @@
 #
 #     🔐  Licenced under the GNU AGPLv3
 #                        https://www.gnu.org/licenses/aplg-3.0.html
-#meta developer: @dev_n0
+#meta developer: @smlgwy
 #scope: hikka_only 
 #scope: hikka_min 1.4.2
 
@@ -44,15 +44,9 @@ class ProfileEditorMod(loader.Module):
 
     strings = {
         "name": "Profile",
-        "channel": "@dev_hik",
-        "author": "kayt3m"
+        "author": "smlgwy"
         }
-    async def client_ready(self, client:TelegramClient, _):
-        """client_ready hook"""
-        
-
-        await client(JoinChannelRequest(channel=self.strings("channel")))
-
+   
     
     async def namecmd(self, message):
         """- for change your first/second name. """
