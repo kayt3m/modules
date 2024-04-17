@@ -1,6 +1,6 @@
 #Name: musicMod
 #Description: Module for search music.
-#Author: kayt3m
+#Author: @nervousmods
 #Commands:
 #.mus
 
@@ -10,7 +10,7 @@ __version__ = (1, 0, 0)
 import logging 
 from .. import loader, utils
 
-#meta developer: @dev_n0
+#meta developer: @nervousmods
 #scope: hikka_only
 #scope: hikka_min 1.4.2
 
