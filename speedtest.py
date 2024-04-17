@@ -1,6 +1,6 @@
 #Name: speedtester
 #Description: Module for checking your Internet speed.
-#Author: kayt3m
+#Author: @nervousmods
 # Commands:
 # .speed
 #     _  __     ____    __    __  ________    ____       __  __
@@ -13,7 +13,7 @@
 #
 #     🔐  Licenced under the GNU AGPLv3
 #                        https://www.gnu.org/licenses/aplg-3.0.html
-#meta developer: @dev_n0
+#meta developer: @nervousmods
 #scope: hikka_only 
 #scope: hikka_min 1.4.2
 
