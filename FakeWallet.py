@@ -30,17 +30,6 @@ class FakeWallet(loader.Module):
         "name": "FakeWallet",
     }
 
-    def __init__(self):
-        self.config = loader.ModuleConfig(
-            loader.ConfigValue(
-                "crypto_value",
-                '0',
-                lambda:
-self.strings("crypto_value"),
-validator = loader.validators.Integer(),
-            ),
-        )
-    
     @loader.command()
     async def fwalletcmd(self, message: Message):
         """-> to get a fake wallet"""
