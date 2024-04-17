@@ -1,6 +1,6 @@
 #Name: Keepermod
 #Decsription: Module for save self-destructing images
-#Author: kayt3m
+#Author: @nervousmods
 #Commands:
 # .kp
 # .akp
@@ -14,7 +14,7 @@
 #
 #     🔐  Licenced under the GNU AGPLv3
 #                        https://www.gnu.org/licence/aplg-3.0.html
-#meta developer: @dev_n0
+#meta developer: @nervousmods
 #
 
 __version__ = (1, 0, 0)
