@@ -1,6 +1,6 @@
 #Name: Profile
 #Description: Module for changing profile data.
-#Author: smlgwy
+#Author: @nervousmods
 # Commands:
 # .name | .about | .user
 #     _  __     ____    __    __  ________    ____       __  __
@@ -13,7 +13,7 @@
 #
 #     🔐  Licenced under the GNU AGPLv3
 #                        https://www.gnu.org/licenses/aplg-3.0.html
-#meta developer: @smlgwy
+#meta developer: @nervousmods
 #scope: hikka_only 
 #scope: hikka_min 1.4.2
 
