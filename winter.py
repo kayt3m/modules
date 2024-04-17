@@ -1,11 +1,11 @@
 # Name: WintMod
-# Author: kayt3m
+# Author: @nervousmods
 # Commands: 
 # .wt
 #🔒 Licensed under the GNU AGPLv3
 #             https://www.gnu.org/licenses/agpl-3.0.html
 #
-# meta developer: @dev_n0
+# meta developer: @nervousmods
 
 
 from datetime import datetime
