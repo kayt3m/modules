@@ -1,6 +1,6 @@
 # Name: Searcher
 #Description: Searches for various queries in inline bots
-# Author: Gwynplaine
+# Author: @nervousmods
 # Commands:
 # .pic | .vid | .gif | .stick
 # ---------------------------------------------------------------------------------
@@ -9,7 +9,7 @@
 # ⚠️ All modules is not scam and absolutely safe.
 # 👤 https://t.me/morcorp
 #-----------------------------------------------------------------------------------
-# meta developer: @smlgwy
+# meta developer: @nervousmods
 #scope: hikka_only 
 #scope: hikka_min 1.4.2
 #scope: inline
