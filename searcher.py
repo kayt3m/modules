@@ -43,7 +43,6 @@ class Searcher(loader.Module):
     }
 
     strings_ru = {
-        "name": "Поисковик",
         "error": "<emoji document_id=5258318620722733379>❌</emoji>Не найдено!",
     }
 
