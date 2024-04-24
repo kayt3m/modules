@@ -23,7 +23,7 @@ __version__ = (1, 0, 0)
 logger = logging.getLogger(__name__)
 
 @loader.tds
-class Text2TXT(loader.Module):
+class Text2File(loader.Module):
     """Module for convertation your text to file"""
     def __init__(self):
         self.config = loader.ModuleConfig(
