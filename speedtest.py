@@ -36,7 +36,7 @@ class Speedtest(loader.Module):
     """Module for checking your speedtest."""
     strings = {
         "name": "speedtester",
-        "author": "@dev_hik",
+       
         "speedtest": "Testing.. ",
         "speed": (
             "<b> Download: <code>{dowload}</code> Mbit/s</b>\n"
@@ -78,11 +78,6 @@ class Speedtest(loader.Module):
             "<b>Sunucu Pingi: <code>{ping}</code>ms</b>"
     }
 
-   
-    async def client_ready(self, client:TelegramClient, _):
-        """client_ready hook"""
-
-        await client(JoinChannelRequest(channel=self.strings("author")))
 
 
     
