@@ -45,7 +45,7 @@ class SeasonsTimer(loader.Module):
         ),
     
     @loader.command(ru_doc="-> вывести таймер до лета")
-    async def tosutcmd(self, message):
+    async def tosumcmd(self, message):
         """-> display timer until summer"""
         now=datetime.now()
         summer=datetime(now.year, 6, 1)       
