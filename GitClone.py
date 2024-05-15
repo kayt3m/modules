@@ -2,7 +2,7 @@
 #Description: Module for cloning codes from GitHub using raw links.
 #Author: @nervousmods
 #Commands:
-#.gitcl | .ghcset
+#.gitcl
 # ---------------------------------------------------------------------------------
 #🔒 Licensed under the GNU GPLv3
 #🌐 https://www.gnu.org/licenses/agpl-3.0.html
