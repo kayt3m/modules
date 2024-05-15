@@ -2,7 +2,7 @@
 #Description: Модуль - таймер времен года.
 #Author: @nervousmods
 #Commands:
-#.tosum | .toaut | .towin | .tospt
+#.tosum | .toaut | .towin | .tospr
 # ---------------------------------------------------------------------------------
 #🔒 Licensed under the GNU GPLv3
 #🌐 https://www.gnu.org/licenses/agpl-3.0.html
@@ -80,7 +80,7 @@ class SeasonsTimer(loader.Module):
         ),
     
     @loader.command(ru_doc="-> вывести таймер до весны")
-    async def tosptcmd(self, message):
+    async def tosprcmd(self, message):
         """-> display timer until spring"""
         now=datetime.now()
         spring=datetime(now.year, 3, 1)
