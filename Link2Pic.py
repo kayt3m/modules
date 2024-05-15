@@ -1,8 +1,8 @@
-# Name: Url2Img
-# Description: Module for downloading images via link from any sources
+# Name: Link2Pic
+# Description: Module for downloading images via link from any sources.
 # Author: @nervousmods
 # Commands:
-# .uti
+# .l2p
 # ---------------------------------------------------------------------------------
 # 🔒 Licensed under the GNU GPLv3
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
@@ -20,10 +20,10 @@ import requests
 import time
 
 @loader.tds
-class Url2Img(loader.Module):
+class Link2Pic(loader.Module):
     """Module for downloading images via link from any sources"""
     strings={
-        "name": "Url2Img",
+        "name": "Link2Pic",
         "no_args": "Don't have any args!",
         "invalid": "Invalid args! Provide a valid image link",
         "download": "Downloading..",
@@ -36,7 +36,7 @@ class Url2Img(loader.Module):
     }
 
     @loader.command(ru_doc="-> скачать изображение по ссылке")
-    async def uticmd(self, message):
+    async def l2pcmd(self, message):
         """-> to download image by url"""
         args=utils.get_args_raw(message)
         await utils.answer(message, self.strings("download"))
