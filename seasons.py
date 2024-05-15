@@ -44,7 +44,7 @@ class SeasonsTimer(loader.Module):
             ),
         ),
     
-    @loader.command(ru_doc="вывести таймер до лета")
+    @loader.command(ru_doc="-> вывести таймер до лета")
     async def tosutcmd(self, message):
         """-> display timer until summer"""
         now = datetime.now()
@@ -82,7 +82,7 @@ class SeasonsTimer(loader.Module):
             ),
         ),
     
-    @loader.command(ru_doc="вывести таймер до весны")
+    @loader.command(ru_doc="-> вывести таймер до весны")
     async def tosptcmd(self, message):
         """-> display timer until spring"""
         now = datetime.now()
