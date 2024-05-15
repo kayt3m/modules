@@ -2,7 +2,7 @@
 #Description: Модуль - таймер времен года.
 #Author: @nervousmods
 #Commands:
-#.tosut | .toaut | .towit | .tospt
+#.tosum | .toaut | .towin | .tospt
 # ---------------------------------------------------------------------------------
 #🔒 Licensed under the GNU GPLv3
 #🌐 https://www.gnu.org/licenses/agpl-3.0.html
@@ -23,10 +23,10 @@ class SeasonsTimer(loader.Module):
     """Модуль таймер до начала времен года."""
     strings = {
         "name": "SeasonsTimer"
-        }
+    }
     
     @loader.command(ru_doc="-> вывести таймер до зимы")
-    async def towitcmd(self, message):
+    async def towincmd(self, message):
         """-> display timer until winter"""
         now=datetime.now()
         winter=datetime(now.year, 12, 1)
@@ -36,8 +36,7 @@ class SeasonsTimer(loader.Module):
         await utils.answer(
             message,
             (
-            "<b><emoji document_id=5258258882022612173>⏲</emoji> Таймер\n\n"
-                f"<emoji document_id=5334788464728612728>❤️</emoji> До зимы:\n"
+            "<b>f"<emoji document_id=5334788464728612728>❤️</emoji> До зимы:\n"
                 f"• Дней<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_winter.days}\n"
                 f"• Часов<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_winter.seconds // 3600}\n"
                 f"• Минут<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_winter.seconds // 60 % 60}\n</b>"              
@@ -55,8 +54,7 @@ class SeasonsTimer(loader.Module):
         await utils.answer(
             message,
             (
-            "<b><emoji document_id=5258258882022612173>⏲</emoji> Таймер\n\n" 
-                f"<emoji document_id=5334788464728612728>❤️</emoji> До лета:\n"
+            "<b>f"<emoji document_id=5334788464728612728>❤️</emoji> До лета:\n"
                 f"• Дней<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_summer.days}\n"
                 f"• Часов<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_summer.seconds // 3600}\n"
                 f"• Минут<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_summer.seconds // 60 % 60}\n</b>"
@@ -74,8 +72,7 @@ class SeasonsTimer(loader.Module):
         await utils.answer(
             message,
             (
-            "<b><emoji document_id=5258258882022612173>⏲</emoji> Таймер\n\n" 
-                f"<emoji document_id=5334788464728612728>❤️</emoji> До осени:\n"
+            "<b>f"<emoji document_id=5334788464728612728>❤️</emoji> До осени:\n"
                 f"• Дней<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_autumn.days}\n"
                 f"• Часов<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_autumn.seconds // 3600}\n"
                 f"• Минут<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_autumn.seconds // 60 % 60}\n</b>"     
@@ -93,10 +90,9 @@ class SeasonsTimer(loader.Module):
         await utils.answer(
             message,
             (
-            "<b><emoji document_id=5258258882022612173>⏲</emoji> Таймер\n\n"
-               f"<emoji document_id=5334788464728612728>❤️</emoji> До весны:\n"
-               f"• Дней<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_spring.days}\n"
-               f"• Часов<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_spring.seconds // 3600}\n"
-               f"• Минут<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_spring.seconds // 60 % 60}\n</b>"
+            "<b>f"<emoji document_id=5334788464728612728>❤️</emoji> До весны:\n"
+                f"• Дней<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_spring.days}\n"
+                f"• Часов<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_spring.seconds // 3600}\n"
+                f"• Минут<emoji document_id=5364179527230564196>⚪️</emoji> {time_to_spring.seconds // 60 % 60}\n</b>"
             ),
         )
